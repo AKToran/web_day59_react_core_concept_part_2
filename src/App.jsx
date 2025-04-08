@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./Counter";
 
 function App() {
   function handleClick() {
@@ -17,6 +18,8 @@ function App() {
   return (
     <>
       <h3>Vite + React</h3>
+      <Counter></Counter>
+
       <button onClick={handleClick}>Click Me</button>
       <button
         onClick={() => {
@@ -28,7 +31,7 @@ function App() {
 
       <button onClick={handleClickProper}>Proper</button>
 
-      <button onClick={addFive(5)}>Add</button>
+      {/* <button onClick={addFive(5)}>Add</button> */}
       
       {/* proper way to pass an argument */}
       <button onClick={()=> addFive(5)}>Add</button>
